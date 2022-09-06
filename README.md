@@ -14,5 +14,5 @@ go build && mv namedyn /usr/local/bin/
 # please note: you need to login to name.com and create an api token fist
 # ---
 # to handle home.example.com
-USERNAME=username TOKEN=xxxxxxxxx DOMAIN=example.com HOST=home namedyn
+USERNAME=username TOKEN=xxxxxxxxx DOMAIN=example.com HOST=home RENEW_INTERVAL_BY_SECOND=renewalinterval namedyn
 ```
