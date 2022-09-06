@@ -28,9 +28,11 @@ func main() {
 	if !ok {
 		log.Fatalf("environment variable DOMAIN is undefined, aborting...")
 	}
+	
+	second, ok := os.LookupEnv("RENEW_INTERVAL_BY_SECOND")
 	for {
 		run(username, token, host, domain)
-		time.Sleep(10 * time.Second)
+		time.Sleep(second * time.Second)
 	}
 
 }
